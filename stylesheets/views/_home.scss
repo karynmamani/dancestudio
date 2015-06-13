@@ -1,0 +1,368 @@
+.container-fluid{
+	padding: 0;
+}
+
+.navbar-default{
+	margin:0;
+  border-radius: 0;
+  position: fixed;
+  width: 100%;
+  z-index: 20;
+}
+ul.nav.navbar-nav li a:hover {
+  border-bottom: 2px solid rgba(107, 25, 119, 1);
+}
+
+.navbar-default.scroll{
+ background-color:rgba(103, 75, 107, 0.38);
+   position: fixed;
+  width: 100%;
+  z-index: 15;
+  visibility: visible !important;
+}
+.circulo-a img{
+	width: 85px;
+	height: 85px;
+	padding: 5%;
+}
+
+.circulo-b img{
+	width: 40px;
+	height: 40px;
+	margin: 2% ;
+}
+
+
+.navbar-header{
+	float:none;
+}
+.navbar-default{
+	background-color: #fff;
+}
+.nav li{
+	list-style: none;
+	font-family: "JosefinSlab-Regular";
+	font-size: 21px;
+	padding: 0 2%;
+	a{
+		padding: 0%;
+	}
+}
+
+.navbar-nav{
+	text-align: center;
+	float: none;
+	li {
+     float: none;
+     display: inline-block;
+     @media screen and (max-width: #{$screen-phone}) {
+     	display: block;
+     }
+	}
+}
+
+.item{
+  img{
+     width: 100%; 
+   }
+}
+
+.slide{
+  margin-top: 0;
+}
+
+.arrow-down {
+  text-align: center;
+  position: relative;
+  z-index: 15;
+  bottom: 55px;
+}
+
+.img-perfil img{
+	width: 100%;
+  }
+.row{
+  padding-top: 7%;
+  margin: 0;
+}
+
+ .text1{
+ 	text-align: center;
+ 	h3{
+  	font-family: "murrayhill-bd-bt-bold";
+  	font-size: 42px;
+  	color: rgba(103, 75, 107, 1);
+  }
+  h2{
+  	color: rgba(103, 75, 107, 1);
+  	font-family:"JosefinSans-Regular";
+  	font-size: 25px;
+  }
+ h2.text-center.mt:hover {
+  border-bottom: 1px solid red;
+  width: 30px;
+}
+  span{
+  		color:#fe4a4a;
+   }
+   p{
+   	padding: 3% 14%;
+	  line-height: 25px;
+	  color: grey;
+    padding: 3% 0 0 14%;
+    text-align: start;
+   }
+  }
+
+.descripcion{
+    padding: 13% 0;
+}
+.text-center{
+	text-align: center;
+  color: rgba(107, 25, 119, 1);
+}
+.mt{
+  margin-top: 6%;
+  color: rgba(107, 25, 119, 1);
+}
+
+/*works*/
+p{
+  margin: 0;
+  padding: 0;
+}
+.content-item{
+
+  @include backface-visibility( hidden );
+  height: 270px;
+  margin: 20px auto;
+  overflow: hidden;
+  position: relative;
+  width: 400px;
+  .overlay{
+    border-bottom: 274px solid rgba(103, 75, 107, 0.38);
+    border-right: 100px solid transparent;
+    bottom: 0;
+    height: 0;
+    opacity: .95;
+    position: absolute;
+    left: 0;
+    text-indent: -9999px;
+    @include transition(all .5s ease-out);
+    width: 0;
+  }
+  &:hover .overlay{
+    border-bottom: 800px solid #674B6B; //size must be double container
+    border-left: 800px solid transparent;//size must be double container
+    @include transition(all .5s ease-out);
+  }
+  .corner-overlay-content{
+    bottom: 15px;
+    color: white;
+    position: absolute;
+    right: 15px;
+    @include transition(all .5s ease-out);
+  }
+  &:hover .corner-overlay-content{
+    opacity: 0;
+    @include transition(all .5s ease-out);
+  }
+  .overlay-content{
+    bottom: 0;
+    left: 0;
+    opacity: 0;
+    padding: 30px;
+    position: absolute;
+    right: 0;
+    top: 0;
+    @include transition(all .3s ease-out);
+    h2{
+      padding: 0 0 12px;
+      font-size: 40px !important;
+      color: white;
+      font-weight: 100;
+    }
+    p , a {
+      color:white;
+      text-decoration: none;
+    }
+  }
+  &:hover .overlay-content{
+    opacity: 1;
+    @include transition(all .3s ease-out);
+    @include transition-delay(.3s);
+  }
+}
+/*blog*/
+.back{
+	width: 100%;
+  	height: 300px;
+  	bottom: 0;
+  	background-image: url(../assets/img/tumblr.jpg);
+  	background-repeat: no-repeat;
+  	background-size: 100%;
+  	background-attachment: fixed;
+  	opacity: 0.6;
+  		h1{
+  			font-family: "DancingScript-Regular";
+			color: #fff;
+			font-size: 46px;
+			text-align: center;
+			padding: 5% 29%;
+			
+		}
+    }
+/*servicios*/
+.seccion-servicios{
+  h1{
+    padding-top: 5%;
+    }
+  h2{
+      text-align: center;
+      margin-bottom: 104px;
+      padding-top: 90px;
+  }
+}
+
+
+.servicios{
+  .img-servicios{
+    text-align: center;
+    position: relative;
+    top: 41px;
+      img{
+          height: 80px;
+      }
+  }
+  .caja-blog{
+    text-align: center;
+      .text-blog{
+        padding: 0% 0% 15% 0%;
+        margin: 0;
+        font-family: MuseoSans-300;
+        font-size: 15px;
+        margin-top: -17px;
+        color: rgb(126, 120, 104);
+   }  
+     a{
+      text-decoration: none;
+    }
+    h3{
+      padding: 21px 0;
+      text-align: center;
+      margin-top: 67px;
+      color: #34495e;
+      font-family: MuseoSans-300;
+    }
+    p{
+      visibility: hidden;
+    }
+ }
+}
+.content:hover{
+  .img-servicios{
+    visibility: hidden;
+  }
+  p{
+    visibility: visible;
+  }
+  .caja-blog{
+      margin-top: -91px;
+      transition: 0.5s all ease-in-out;
+  }
+}
+ /*footer*/
+ .footer {
+	margin-top: 3%;
+  background-color: rgb(34, 34, 34);
+  .datos-footer {
+    padding-top:2%;
+    color: #595959;
+    font-size: 15px;
+    nav{
+      a{
+        padding: 0 2%;
+        text-decoration: none;
+        color: #595959;
+      }
+      a:hover{
+        color: blueviolet;
+      }
+      .border-rigth{
+          border-right: 1px solid #595959;
+      }
+    }
+  }
+}
+a:hover, a:focus {
+  color: blueviolet;
+  text-decoration: underline;
+}
+.datos-footer-2{
+  padding-top:1% !important;
+  border-bottom: transparent !important;
+  nav{
+    ul{
+      padding:0;
+      li{
+        padding: 0 2%;
+        list-style: none;
+        float: left;
+      }
+    }
+  }
+  a{
+   padding: 0 2%;
+  }
+}
+
+
+.left-nav-footer{
+	a{
+		color:gray;
+		&:hover{
+			color:palevioletred;
+	}
+}
+}
+
+input.form-control{
+	width: 250% !important;
+}
+
+.linea-separador{
+	button{
+		background-color: #63cbc2;
+		position: relative;
+  	left: 124%;
+  	i{
+  		color: white;
+		}
+		&:hover{
+			background-color: white;
+			i{
+			color: #63cbc2;
+			}
+		}
+	}
+
+}
+
+.fa-2x {
+  font-size: 2em;
+}
+.fa {
+  display: inline-block;
+  font: normal normal normal 14px/1 FontAwesome;
+  font-size: inherit;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  transform: translate(0, 0);
+}
+
+
+
+
+
+
